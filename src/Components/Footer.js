@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { Component} from "react";
 import { Container, Row, Col} from 'react-bootstrap';
 import { SlSocialVkontakte, SlSocialYoutube, SlSocialInstagram } from "react-icons/sl";
 import './css/Footer.css';
 
 
-const Footer = () => {
+export default class Footer extends Component {
+    render() {
     return (
         <footer className="footer">
             <Container className="footer__inner">
@@ -38,5 +39,4 @@ const Footer = () => {
         </footer>
     );
 };
-
-export default Footer;
+};
