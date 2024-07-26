@@ -1,2 +1,2 @@
-# empty_project_fronted
+# empty_project_webapp
 > На стадии разработки.
