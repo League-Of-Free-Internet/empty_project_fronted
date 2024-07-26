@@ -7,7 +7,6 @@ function App() {
   return (
     <div>
       <Header />
-      <h1>Тест</h1>
       <Footer />
     </div>
   );
