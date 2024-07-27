@@ -3,7 +3,7 @@ import { Container, Navbar, Nav, FormControl, Form, Button} from "react-bootstra
 import logo from "../Img/svg/logo.svg"
 import { BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
 
-import News from "../Pages/News";
+import NewsList from "../Pages/NewsList";
 import Disciplines from "../Pages/Disciplines";
 import Events from "../Pages/Events";
 
@@ -35,7 +35,7 @@ export default class Header extends Component {
             </Navbar>
             <Router>
                 <Routes>
-                    <Route exact path="/" element={<News/>}></Route>
+                    <Route exact path="/" element={<NewsList/>}></Route>
                     <Route exact path="/disciplines" element={<Disciplines/>}></Route>
                     <Route exact path="/events" element={<Events/>}></Route>
                 </Routes>
