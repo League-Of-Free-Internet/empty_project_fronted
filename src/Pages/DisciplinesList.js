@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Card, Container, Row, Col, Alert } from 'react-bootstrap';
-import './css/DisciplinesList.css'; // Импортируем стили
-import defaultImage from './assets/default-image.jpg'; // Путь к изображению по умолчанию
+import './css/DisciplinesList.css';
+import defaultImage from './assets/default-image.jpg';
 
 const DisciplinesList = () => {
   const [disciplines, setDisciplines] = useState([]);
