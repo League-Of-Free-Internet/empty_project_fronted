@@ -4,14 +4,14 @@ import logo from "../Img/svg/logo.svg"
 import { BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
 
 import NewsList from "../Pages/NewsList";
-import Disciplines from "../Pages/Disciplines";
+import DisciplinesList from "../Pages/DisciplinesList";
 import Events from "../Pages/Events";
 
 export default class Header extends Component {
     render() {
         return (
             <>
-            <Navbar sticky="top" collapseOnSelect expand="md" bg="dark" variant="dark">
+            <Navbar sticky="top" collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Container>
                     <Navbar.Brand href="/">
                         <img src={logo}
@@ -36,7 +36,7 @@ export default class Header extends Component {
             <Router>
                 <Routes>
                     <Route exact path="/" element={<NewsList/>}></Route>
-                    <Route exact path="/disciplines" element={<Disciplines/>}></Route>
+                    <Route exact path="/disciplines" element={<DisciplinesList/>}></Route>
                     <Route exact path="/events" element={<Events/>}></Route>
                 </Routes>
             </Router>
